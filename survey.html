@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #email:invalid {
+            border: 1px solid red 
+        }
+        #email:valid {
+            border: 2px solid cyan;
+        }
+        #number:invalid {
+            border: 1px solid red  
+                }
+        #number:valid {
+            border: 2px solid cyan;
+        }
+        #name:valid {
+            border: 2px solid cyan;
+        }
+        #body {
+            text-align: center;   
+            /*text-align: justify;*/
+            /*background-color:rgb(77, 68, 163);*/
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            font-size: large;
+            background: radial-gradient(rgb(113, 113, 221), rgb(68, 58, 153));
+            }
+        #survey-form {
+            background: rgb(36, 24, 104);
+            margin: 5em;
+            margin-top: 2em;
+            border-radius: 1%;
+            /*opacity: 0.5;*/
+            text-align: justify;
+            padding: 2em;
+         
+        }
+        #text-div {
+            display: grid;
+            padding-bottom: 2%;
+            grid-template-rows:auto;
+            grid-gap: 10px;
+        }
+        #name {
+            height: 30px;
+        }
+        #email {
+            height: 30px;
+        }
+        #number {
+            height: 30px;
+        }
+        #dropdown-div {
+            display: grid;
+        }
+        #dropdown {
+            height: 45px;
+        }
+        #radio-div {
+            display: block;
+        }
+        #checkbox-div {
+            display: block;
+            }
+        #textarea-div {
+            display: grid;
+        }
+        #textarea {
+            height: 100px;
+        }
+        #submit-div {
+            display: grid;
+            
+            height: 40px;
+            background-color: teal;
+            border-radius:5%;       
+            }
+        #submit {
+            width: 660px;
+            color: whitesmoke;
+            border-radius: 2%;
+            height: 40px;
+            background-color:teal;
+        }
+    </style>
+    <head>
+        <title>freeCodeCamp Survey Form</title>
+    </head>
+    <body id="body">
+        <h1>
+            freeCodeCamp Survey Form
+        </h1>
+        <p>
+            <i>
+                Thank you for taking the time to help us improve the platform
+            </i>
+        </p>
+        <form id="survey-form">
+            <div id="text-div">
+                    <br>
+                <label id="name-label" for="name">
+                    Name
+                </label>
+                    <br>
+                <input id="name" type="text" placeholder="Enter your name" required>
+                    <br>
+                    <br>
+                <label id="email-label" for="email">
+                    Email
+                </label>
+                    <br>
+                <input id="email" type="email" placeholder="Enter your Email" required>
+                    <br>
+                    <br>
+                <label id="number-label" for="number">
+                    Age
+                </label>
+                    <br>
+                <input id="number" type="number" min="2" max="100" placeholder="Enter your age(optional)">
+            </div>
+            <div id="radio-div">
+                    <br>
+                <legend for="radio">
+                    Would you recommend freeCodeCamp to a friend?
+                </legend>
+                    <br>
+                <div>
+                    <input id="radio" type="radio" value="yes" name="name">Definitely
+                </div>
+                    <br>
+                <div>
+                    <input id="radio" type="radio" value="maybe" name="name">Maybe
+                </div>
+                    <br>
+                <div>
+                    <input id="radio" type="radio" value="no" name="name">Not Sure
+                </div>
+            </div>
+                    <br>
+            <div id="dropdown-div">
+                <label id="dropdown-label" for="dropdown">
+                    What is your favorite feature of freeCodeCamp?
+                </label>
+                <select id="dropdown" name="dropdown" select_id="Select an option">
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="forum">Forum</option>
+                    <option value="other">Other </option>
+                </select>
+            </div>
+            <div id="checkbox-div">
+                    <br>
+                <legend for="checkbox">
+                    What would you like to see improved? (Check all that apply)
+                </legend>
+                    <br>
+                <div>
+                    <input type="checkbox" value="front">Front-end Projects
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" value="back">Back-end Projects
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" value="data">Data Visualization
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" value="challenges">Challenges
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" value="Videos">Videos
+                </div>
+                    <br>
+                    
+                <div>
+                    <input type="checkbox" value="wiki">Wiki
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" value="city">City Meetups
+                </div>
+            </div>
+                <br>
+                <br>
+            <div id="textarea-div">
+                <label for="textarea">
+                    Any comments or suggestions?
+                </label>
+                <textarea id="textarea" placeholder="Enter your comments"></textarea>
+            </div>
+                <br>
+            <button id="submit" type="submit" value="Submit">Submit                  
+        </form>
+    </body>
+</html>
