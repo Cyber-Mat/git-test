@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        #email:invalid {
-            border: 1px solid red 
-        }
-        #email:valid {
-            border: 2px solid cyan;
-        }
-        #number:invalid {
-            border: 1px solid red  
-                }
-        #number:valid {
-            border: 2px solid cyan;
-        }
-        #name:valid {
-            border: 2px solid cyan;
-        }
-        #body {
-            text-align: center;   
-            /*text-align: justify;*/
-            /*background-color:rgb(77, 68, 163);*/
-            color: white;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-            font-size: large;
-            background: radial-gradient(rgb(113, 113, 221), rgb(68, 58, 153));
-            }
-        #survey-form {
-            background: rgb(36, 24, 104);
-            margin: 5em;
-            margin-top: 2em;
-            border-radius: 1%;
-            /*opacity: 0.5;*/
-            text-align: justify;
-            padding: 2em;
-         
-        }
-        #text-div {
-            display: grid;
-            padding-bottom: 2%;
-            grid-template-rows:auto;
-            grid-gap: 10px;
-        }
-        #name {
-            height: 30px;
-        }
-        #email {
-            height: 30px;
-        }
-        #number {
-            height: 30px;
-        }
-        #dropdown-div {
-            display: grid;
-        }
-        #dropdown {
-            height: 45px;
-        }
-        #radio-div {
-            display: block;
-        }
-        #checkbox-div {
-            display: block;
-            }
-        #textarea-div {
-            display: grid;
-        }
-        #textarea {
-            height: 100px;
-        }
-        #submit-div {
-            display: grid;
-            
-            height: 40px;
-            background-color: teal;
-            border-radius:5%;       
-            }
-        #submit {
-            width: 660px;
-            color: whitesmoke;
-            border-radius: 2%;
-            height: 40px;
-            background-color:teal;
-        }
-    </style>
     <head>
-        <title>freeCodeCamp Survey Form</title>
+        <title>
+            freeCodeCamp Survey Form
+        </title>
+        <style>
+            #email:invalid {
+                border: 1px solid red 
+            }
+            #email:valid {
+                border: 2px solid cyan;
+            }
+            #number:invalid {
+                border: 1px solid red  
+            }
+            #number:valid {
+                border: 2px solid cyan;
+            }
+            #name:valid {
+                border: 2px solid cyan;
+            }
+            #body {
+                text-align: center;   
+                /*text-align: justify;*/
+                /*background-color:rgb(77, 68, 163);*/
+                color: white;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: large;
+                background: radial-gradient(rgb(113, 113, 221), rgb(68, 58, 153));
+            }
+            #survey-form {
+                background: rgb(36, 24, 104);
+                margin: 5em;
+                margin-top: 2em;
+                border-radius: 1%;
+                /*opacity: 0.5;*/
+                text-align: justify;
+                padding: 2em;   
+            }
+            #text-div {
+                display: grid;
+                padding-bottom: 2%;
+                grid-template-rows:auto;
+                grid-gap: 10px;
+            }
+            #name {
+                height: 30px;
+            }
+            #email {
+                height: 30px;
+            }
+            #number {
+                height: 30px;
+            }
+            #dropdown-div {
+                display: grid;
+            }
+            #dropdown {
+                height: 45px;
+            }
+            #radio-div {
+                display: block;
+            }
+            #checkbox-div {
+                display: block;
+            }
+            #textarea-div {
+                display: grid;
+            }
+            #textarea {
+                height: 100px;
+            }
+            #submit-div {
+                display: grid;
+            
+                height: 40px;
+                background-color: teal;
+                border-radius:5%;       
+            }
+            #submit {
+                width: 660px;
+                color: whitesmoke;
+                border-radius: 2%;
+                height: 40px;
+                background-color:teal;
+            }
+        </style>
     </head>
     <body id="body">
         <h1>

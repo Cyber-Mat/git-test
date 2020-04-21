@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>    
+        <style>
+            @media screen {   
+            }
+            #body {
+                background-color: rgb(63, 56, 56);
+                color: whitesmoke;
+            }
+            #welcome-section {
+                height:100vh;
+                margin-top: 5em;
+            }
+            #navbar {
+                position: fixed;
+                top: 0;
+                height:2.5em;
+                width: 100%;
+                background-color: rgb(247, 0, 74) ;
+                padding-left: 50%;
+                padding-top: 1em;
+            }
+            .nav {
+                color: rgb(255, 251, 251);
+                padding: 35px;
+                text-decoration: unset;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            #welcome-section {
+                text-align: center;
+                margin-top: 7em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 35px;
+            }
+            h5 {
+                color: rgb(71, 166, 255);
+            }
+            #portfolio-h1 {
+                text-align: center;
+            }
+            #portfolio-section {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-row: 50% 50%;
+                background-color: teal;
+            }
+            figcaption {
+                text-align: center;
+            }
+            a {
+                color: white;
+                text-decoration: unset ;
+            }
+            .project-tile {
+                height: 100%;
+                width: 100%;
+            }
+            #contact-div {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <nav id="navbar">
+            <a id="about-nav" class="nav" href="#welcome-section">
+                About
+            </a>
+            <a id="work-nav"  class="nav" href="#portfolio-section">
+                Works
+            </a>
+            <a id="contact-nav" class="nav" href="#contact-div">
+                Contact
+            </a>
+        </nav>
+        <section id="welcome-section">
+            <h1 id="welcome-h1">
+                Hi, I'm Cyber-mat
+            </h1>
+            <h5>
+                <i>a web developer</i>
+            </h5>
+        </section>
+            <h1 id="portfolio-h1">
+                Here are some of my works :)
+            </h1>
+        <section id="portfolio-section">
+            <figure id="p1">
+                <img class="project-tile" src="images/p1.png" alt="Tribute">
+                <figcaption>
+                    <a href="http://github.com/cyber-mat">Tribute</a>
+                </figcaption>
+            </figure>
+            <figure id="p2">
+                <img class="project-tile" src="images/p2.png" alt="JavaScript">
+                <figcaption>
+                    <a href="http://github.com/cyber-mat">JavaScript</a>
+                </figcaption>
+            </figure>
+            <figure id="p3">
+                <img class="project-tile" src="images/p3.png" alt="Survey">
+                <figcaption>
+                    <a href="http://github.com/cyber-mat">Survey</a>
+                </figcaption>
+            </figure>
+            <figure id="p4">
+                <img class="project-tile" src="images/p4.png" alt="Product">
+                <figcaption>
+                    <a href="http://github.com/cyber-mat">Product</a>
+                </figcaption>
+            </figure>
+        </section>
+        <div id="contact-div">
+            <h1 id="contact-h1">
+                Let's work together...
+            </h1>
+            <p>
+                <i>How do you take your coffee?</i>
+            </p>
+            <a id="profile-link" target="_blank" href="http://facebook.com/olaniyanolam">Faceebook</a>
+            <a id="profile-link" target="_blank" href="http://github.com/cyber-mat">Github</a>
+            <a id="profile-link" target="_blank" href="http://twitter.com/olamide_olams">Twitter</a>
+            <a id="profile-link" target="_blank" href="http://gmail.com/olaniyanolamide">Send me a mail</a>
+            <a id="profile-link" target="_blank" href="tel:+2348130884044">Call me</a>
+        </div>
+                <br>
+                <br>
+                <br>
+        <footer>
+        Cyber-mat
+        </footer>
+    </body>
+</html>
